@@ -361,7 +361,10 @@ font-size: 2em;
   input[type="checkbox"] {
     display: none;
   }
-
+  a {
+    text-decoration: none;
+    color: black;
+  }
   .backtotop {
     position: fixed;
     bottom: 2px;
@@ -370,10 +373,7 @@ font-size: 2em;
     font-size: 2em;
   }
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+  
 
   .verseline {
     margin: 0 0 0.4em 8em;
