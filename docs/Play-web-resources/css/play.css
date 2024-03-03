@@ -310,6 +310,11 @@ input[type="checkbox"] {
   background-color: whitesmoke;
   }
 
+  audio {
+    display: block;
+    margin-left: 29%;
+  }
+
   img {
     margin-right: 0;
 margin-left: 0;
@@ -373,8 +378,6 @@ font-size: 2em;
     font-size: 2em;
   }
 
-  
-
   .verseline {
     margin: 0 0 0.4em 8em;
     font-size: 16px;
@@ -388,5 +391,4 @@ font-size: 2em;
     line-height: 25px;
   }
 
-  
 }
