@@ -369,6 +369,11 @@ font-size: 2em;
     opacity: 0.9;
     font-size: 2em;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
   .verseline {
     margin: 0 0 0.4em 8em;
     font-size: 16px;
@@ -381,5 +386,6 @@ font-size: 2em;
     margin-right: 20%;
     line-height: 25px;
   }
+
   
 }
