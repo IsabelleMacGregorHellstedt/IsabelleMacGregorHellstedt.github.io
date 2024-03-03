@@ -1,0 +1,385 @@
+/* This stylesheet will be selected when you export HTML from InDesign */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IM+Fell+DW+Pica:ital@1&family=Lora:ital,wght@0,400..700;1,400..700&family=Tangerine:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 45px;
+}
+
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;  background-color: rgb(76, 76, 128);
+margin-top: 40px;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 60%;
+  margin: 12px auto;
+  padding: 20px;
+  max-width: 800px;
+}
+
+header {
+  background-color: Lavender;
+  color: black;
+  font-family: "IM Fell DW Pica", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+nav {
+  /* this is where your nav list items will be */
+  display: block;
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: .8em;
+}
+
+nav ul {
+  list-style: none;
+  display:flex;
+  justify-content: flex-end;
+  clear: right;
+}
+
+nav ul li {
+  flex: 0 0 9rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+li.home {
+  margin-right: auto;
+}
+
+/* we turn off the underline and set the padding and the color O */
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem .8rem;
+  display: block;
+  color: black;
+  font-size: 15px;
+}
+
+/* feedback for the user with a background when hovering hover */
+
+nav ul li:hover {
+  background-color: whitesmoke;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+
+/* sub menus */
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+}
+
+li ul li a {
+  padding: 0.3rem 1.5rem;
+  /*   font-size: 0.8rem; */
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 9rem; /* the same as the value for flex-basis on the parent li */
+}
+
+section {
+border:none;
+border-width: 0;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+.dramatis {
+text-align: left;
+}
+
+.table {
+  text-align: right;
+}
+
+.play {
+font-size: 15px;
+}
+.sceneimage {
+width: 90%;
+max-width: 500px;
+margin: 12px auto
+}
+.mapimage {
+  width: 70%;
+  max-width: 500px;
+  margin: 12px auto
+  }
+  .mapheading {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bolder;
+  }
+.himage {
+  width: 60%;
+  max-width: 500px;
+  margin: 12px auto
+}
+
+img {
+width: 100%;
+display: block;
+min-height: 50%;
+padding: 25px;
+}
+.act {
+color: black;
+font-size: 40px;
+background-color: rgb(190, 206, 237);
+font-stretch: expanded;
+text-align: center;
+}
+.character {
+text-decoration: underline;
+text-decoration-color:rgb(105, 104, 120);
+text-underline-offset: 8px;
+text-decoration-thickness: 4px;
+}
+.charactername {
+font-weight: bold;
+}
+
+
+.dramatishead {
+background-color: lavender;
+text-align: center;
+margin-top: 10px;
+color: black;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: 8px;
+  opacity: 0.9;
+  font-size: 3em;
+}
+
+.location {
+font-size: 20px;
+font-style: italic;
+text-align: center;
+background-color: lavender;
+}
+.play_location {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.firstscene {
+font-style: italic;
+margin-top: 13px;
+margin-bottom: 13px;
+background-color: lavender;
+text-align: center;
+font-size: 30px;
+}
+
+.scene {
+color: black;
+font-size: 30px;
+margin-bottom: 12px;
+background-color: lavender;
+text-align: center;
+}
+.song {
+text-align: center;
+}
+
+.stagedirection {
+margin-top: 12px;
+margin-bottom: 12px;
+font-size: 16px;
+text-align: right;
+}
+.verseline {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+  margin-right: 20%;
+}
+
+.prose {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+  margin-right: 25%;
+  line-height: 25px;
+}
+
+.character_role {
+text-align: right;
+font-weight: normal;
+}
+.extra-character-names {
+font-weight: bold;
+}
+
+.stage_directions_inline {
+  font-style: italic;
+margin-right: 5px;
+}
+
+td.Basic-Table {
+  text-align: right;
+}
+td.Basic-Table + td.Basic-Table {
+  text-align: left;
+  padding-left: 12px;;
+}
+
+table.Basic-Table {
+  margin: 12px auto;
+}
+
+audio {
+  display: block;
+  margin-left: 29%;
+}
+
+.end {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  figure {
+    width: 60%;
+    float: none;
+    margin: 1em auto;
+  }
+  main {
+  width: 100%;
+  margin:0 auto;
+  padding:35px;
+  background-color: whitesmoke;
+  }
+
+  img {
+    margin-right: 0;
+margin-left: 0;
+  }
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  li ul {
+    position: static;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+    /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+
+  nav ul li ul li {
+    flex: 0 0 auto;
+    /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+  
+  #toggle:checked ~ #menu {
+    display: block !important;
+  }
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+font-size: 2em;
+  }
+  
+  #toggle:checked ~ #menu {
+    display: none; 
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .backtotop {
+    position: fixed;
+    bottom: 2px;
+    right: 8px;
+    opacity: 0.9;
+    font-size: 2em;
+  }
+  .verseline {
+    margin: 0 0 0.4em 8em;
+    font-size: 16px;
+    margin-right: 15%;
+  }
+  
+  .prose {
+    margin: 0 0 0.4em 8em;
+    font-size: 16px;
+    margin-right: 20%;
+    line-height: 25px;
+  }
+  
+}
