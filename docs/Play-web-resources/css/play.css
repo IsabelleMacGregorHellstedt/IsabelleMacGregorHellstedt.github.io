@@ -194,7 +194,7 @@ a {
   bottom: 2px;
   right: 8px;
   opacity: 0.9;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .location {
@@ -374,6 +374,7 @@ font-size: 2em;
     text-decoration: none;
     color: black;
   }
+
   .verseline {
     margin: 0 0 0.4em 8em;
     font-size: 16px;
